@@ -4,6 +4,6 @@
  */
 var getConcatenation = function(nums) {
 let first = [...nums]
-let newArr = first.concat(first)
+let newArr = nums.concat(nums)
 return newArr
 };
