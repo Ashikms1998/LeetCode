@@ -9,7 +9,6 @@ var maximumWealth = function(accounts) {
         for(j=0;j<accounts[i].length;j++){
             sum =sum+accounts[i][j];
         }
-            console.log(sum);
         array.push(sum)
     }
         let temp = array[0];
