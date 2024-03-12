@@ -3,13 +3,13 @@
  * @return {number}
  */
 var missingNumber = function (nums) {
-    let arr = [];
-    for (let i = 0; i <= nums.length; i++) {
-        arr.push(i)
+    let sum =0;
+    for(let i =0;i < nums.length;i++){
+        sum += nums[i]
     }
-    for(let i=0;i<arr.length;i++){
-    if(!nums.includes(arr[i])){
-        return arr[i]
+    let total =0;
+    for(let i =0;i <=nums.length;i++){
+        total= total+i
     }
-    }
+    return total-sum
 };
