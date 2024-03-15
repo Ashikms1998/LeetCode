@@ -4,9 +4,8 @@
  * @return {Promise}
  */
 var addTwoPromises = async function(promise1, promise2) {
-    let total1 = await Promise.resolve(promise1)
-    let total2 = await Promise.resolve(promise2)
-    return total1+total2
+    return await Promise.resolve(promise1) + await Promise.resolve(promise2)
+    
 };
 
 /**
