@@ -3,7 +3,6 @@
  * @return {number}
  */
 var minimumOperations = function(nums) {
-   let arr = [];
    const unique = new Set(nums)
    const uniquArr = Array.from(unique)
    let count=0;
