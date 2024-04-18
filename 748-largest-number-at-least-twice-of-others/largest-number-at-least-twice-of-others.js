@@ -3,10 +3,8 @@
  * @return {number}
  */
 var dominantIndex = function(nums) {
-    let nums1 =[]
-    for(let i=0;i<nums.length;i++){
-        nums1.push(nums[i])
-    }
+    let nums1 =[...nums]
+    
     let sorted = nums1.sort((a,b)=>(a-b));
     if(sorted[nums.length-1]/2>=sorted[nums.length-2]){
         for(let i=0;i<nums.length;i++){
