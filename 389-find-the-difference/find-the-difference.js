@@ -4,7 +4,13 @@
  * @return {character}
  */
 var findTheDifference = function (s, t) {
-    let letters = s.split('').sort()
-    return t.split('').sort().find((char,i)=>char!==letters[i])
+    let lettersS = s.split('').sort()
+    let lettersT = t.split('').sort()
+    for(let i=0;i<lettersT.length;i++){
+        if(lettersT[i]!=lettersS[i]){
+            return lettersT[i]
+        }
+    }
+    
 };
 
