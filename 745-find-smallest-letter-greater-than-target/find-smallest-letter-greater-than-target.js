@@ -13,7 +13,6 @@ var nextGreatestLetter = function (letters, target) {
     }
     console.log(arr)
     let deepSorted = JSON.parse(JSON.stringify(arr)).sort((a, b) => (a - b))
-    console.log(deepSorted[0], tarNum, "sadasd", String.fromCharCode(deepSorted[0]))
     if(deepSorted[0]>tarNum&&deepSorted[0]!=tarNum){
         return String.fromCharCode(deepSorted[0])
     }else if(deepSorted[0]===tarNum){
