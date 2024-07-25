@@ -3,7 +3,14 @@
  * @return {number}
  */
 var findMin = function(nums) {
-    nums.sort((a,b)=>(a-b))
-    return nums[0];
+
+    //Example 1:
+
+    // nums.sort((a,b)=>(a-b))
+    // return nums[0];
+
+    //Example 2:
+
+    return Math.min(...nums)
     
 };
