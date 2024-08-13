@@ -24,6 +24,6 @@ var reverseList = function(head) {
     temp=temp.next;
     i++
    }
-   
+   arr.delete
 return head
 };
